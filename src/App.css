@@ -1,38 +1,153 @@
-.App {
+body {
+  background-color: #9eadad;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #c4cdc1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputSection {
+  width: 90%;
+  background-color: #c4cdc1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.savedPasswordsSection {
+  width: 90%; /* Changed width to make it slightly narrower */
+  background-color: #c4cdc1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.subHeading {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#alert {
+  color: green;
+  margin-left: 5px;
+}
+
+.input {
+  width: calc(100% - 24px);
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.table {
+  margin: 2rem 0;
+}
+
+.passwordItem {
+  background-color: #99aeac;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.listValue {
+  margin-right: 15px;
+}
+
+.listLabel {
+  font-weight: bold;
+  width: 100px;
+  padding: 12px;
+  font-size: 18px;
+}
+
+.showPasswordIcon {
+  cursor: pointer;
+  margin-left: 16px;
+  color: #007bff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.showPasswordIcon:hover {
+  color: #0056b3;
+}
+
+.copyIcon,
+.editIcon,
+.deleteIcon {
+  cursor: pointer;
+  color: #555;
+  font-size: 20px;
+  transition: color 0.3s;
+  margin-left: 10px;
+}
+
+.copyIcon:hover,
+.editIcon:hover,
+.deleteIcon:hover {
+  color: #007bff;
+}
+
+.submitButton {
+  background: #9eadad;
+  color: #fff;
+  padding: 12px 24px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 12px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.submitButton:hover {
+  background: #9eadad;
+}
+
+.noData {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
 }
